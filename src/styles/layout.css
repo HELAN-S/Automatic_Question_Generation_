@@ -1,0 +1,29 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1E3A8A;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.main-area {
+  flex: 1;
+}
+
+.header {
+  background: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}

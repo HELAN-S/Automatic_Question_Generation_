@@ -1,0 +1,67 @@
+/* Sidebar */
+.sidebar {
+  /* Changed: Use sticky and top 0 so it stays visible while scrolling */
+  position: sticky;
+  top: 0;
+  height: 100vh; 
+  
+  width: 70px;
+  background: linear-gradient(160deg, #0f0c29, #302b63, #24243e);
+  backdrop-filter: blur(10px);
+  padding-top: 20px;
+  transition: width 0.4s ease;
+  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden; /* Changed from hidden to overflow-x */
+  z-index: 1000; /* Ensure it stays above content */
+  flex-shrink: 0; /* Prevents sidebar from squishing in flex layouts */
+}
+
+/* Expanded */
+.sidebar.open {
+  width: 220px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+/* Nav Container */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap slightly for better fit */
+}
+
+/* Nav Item */
+.nav-item {
+  display: flex;
+  align-items: center;
+  /* Adjust padding to ensure icons align when closed */
+  padding: 12px 25px; 
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 0 12px 12px 0; /* Rounded only on the right side looks cleaner */
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Prevents text from wrapping during transition */
+}
+
+/* Hover */
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transform: translateX(5px);
+}
+
+/* Active */
+.nav-item.active {
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(120, 115, 245, 0.4);
+}

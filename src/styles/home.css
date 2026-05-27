@@ -1,0 +1,60 @@
+.home-container {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1523240795612-9a054b0db644");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 60px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.login-btn:hover {
+  background: #3e8e41;
+}
+
+.register-btn {
+  background: #2196F3;
+  color: white;
+}
+
+.register-btn:hover {
+  background: #0b7dda;
+}

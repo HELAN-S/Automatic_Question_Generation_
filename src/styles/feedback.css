@@ -1,0 +1,195 @@
+/* ------------------------------
+   Page Wrapper
+--------------------------------*/
+.page-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+}
+
+/* Heading */
+.page-wrapper h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2f3640;
+  font-size: 28px;
+}
+
+/* ------------------------------
+   Feedback Card
+--------------------------------*/
+.feedback-card {
+  background: #ffffff;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feedback-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Question Title */
+.feedback-card strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #2f3640;
+}
+
+/* Info Texts */
+.feedback-card p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #718093;
+}
+
+/* Labels */
+.feedback-card label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #2f3640;
+}
+
+/* ------------------------------
+   Star Rating Styles
+--------------------------------*/
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 24px;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  color: #dcdde1;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+  color: #fbc531;
+}
+
+/* Textarea */
+.feedback-card textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #dcdde1;
+  font-size: 14px;
+  text-align: left;
+  resize: vertical;
+  min-height: 60px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.feedback-card textarea:focus {
+  border-color: #487eb0;
+  box-shadow: 0 0 0 2px rgba(72, 126, 176, 0.2);
+}
+
+/* Button */
+.feedback-card button {
+  margin-top: 20px;
+  padding: 10px 18px;
+  background-color: #487eb0;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.feedback-card button:hover {
+  background-color: #40739e;
+  transform: translateY(-2px);
+}
+
+/* ------------------------------
+   Responsive Adjustments
+--------------------------------*/
+@media (max-width: 600px) {
+  .page-wrapper {
+    padding: 20px 10px;
+  }
+
+  .feedback-card {
+    padding: 20px;
+  }
+
+  .feedback-card button {
+    width: 100%;
+  }
+
+  .star-rating {
+    font-size: 20px;
+  }
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star {
+  color: #dcdde1;
+  transition: color 0.2s;
+  margin-right: 5px;
+}
+
+.star.filled {
+  color: #fbc531;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #fbc531;
+}
+.feedback-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.summary-card h3 {
+  margin-top: 10px;
+  color: #487eb0;
+}
+
+.low-quality {
+  border-left: 5px solid #e84118;
+}
+
+.warning {
+  color: #e84118;
+  font-weight: bold;
+}

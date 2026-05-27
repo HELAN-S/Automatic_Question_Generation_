@@ -1,0 +1,138 @@
+.analytics-wrapper{
+
+max-width:1200px;
+margin:auto;
+padding:40px;
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+/* TITLE */
+
+.analytics-title{
+
+text-align:center;
+font-size:32px;
+font-weight:700;
+margin-bottom:30px;
+
+}
+
+
+
+/* TOTAL BOX */
+
+.total-box{
+
+background:#ffffff;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+margin-bottom:30px;
+
+}
+
+.total-box p{
+
+color:#555;
+margin:0;
+
+}
+
+.total-box h2{
+
+margin-top:10px;
+font-size:34px;
+color:#4f46e5;
+
+}
+
+
+
+/* GRID */
+
+.chart-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:25px;
+
+}
+
+
+
+/* CHART CARD */
+
+.chart-card{
+
+background:#ffffff;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+
+}
+
+.chart-card h3{
+
+margin-bottom:15px;
+color:#333;
+
+}
+
+
+
+/* SCORE BOX */
+
+.score-box{
+
+margin-top:30px;
+background:#4f46e5;
+color:white;
+padding:20px;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.score-box span{
+
+font-size:18px;
+
+}
+
+.score-box h2{
+
+font-size:28px;
+margin:0;
+
+}
+
+
+
+/* NO DATA */
+
+.no-data{
+
+text-align:center;
+margin-top:120px;
+color:#777;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+.chart-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
